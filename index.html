@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main style="--bg-image: url('./assets/bg.jpg')">
+      <section class="left-section">
+        <img src="./assets/image.png" alt="Profile" class="profile-image" />
+
+        <div class="search-section">
+          <div class="command-line">
+            <span class="prompt">> cd ~/</span>
+            <div class="search-wrapper">
+              <input
+                type="text"
+                class="search-input"
+                id="searchInput"
+                autocomplete="off"
+              />
+              <span class="block-cursor" id="blockCursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <div class="header">
+          <h1><span>ok</span>alexiiis</h1>
+        </div>
+
+        <div class="bookmarks-container">
+          <div class="bookmark-category">
+            <h3>social</h3>
+            <div class="bookmark-list">
+              <a href="https://linkedin.com" class="bookmark-link">linkedin</a>
+              <a href="https://instagram.com" class="bookmark-link"
+                >instagram</a
+              >
+              <a href="https://youtube.com" class="bookmark-link">youtube</a>
+              <a href="https://discord.com" class="bookmark-link">discord</a>
+              <a href="https://reddir.com/r/unixporn" class="bookmark-link"
+                >r/unixporn</a
+              >
+            </div>
+          </div>
+          <div class="bookmark-category">
+            <h3>dev</h3>
+            <div class="bookmark-list">
+              <a href="https://linkedin.com" class="bookmark-link">linkedin</a>
+              <a href="https://gmail.com" class="bookmark-link">gmail</a>
+              <a href="https://claude.ai/" class="bookmark-link">claude</a>
+              <a href="https://chatgpt.com/?model=auto" class="bookmark-link"
+                >gpt</a
+              >
+            </div>
+          </div>
+          <div class="bookmark-category">
+            <h3>others</h3>
+            <div class="bookmark-list">
+              <a href="https://monkeytype.com" class="bookmark-link"
+                >monkeytype</a
+              >
+              <a href="https://www.chess.com/home" class="bookmark-link"
+                >chess</a
+              >
+              <a href="https://aniwatchtv.to/home" class="bookmark-link"
+                >anime</a
+              >
+              <a href="https://www.cineby.app/" class="bookmark-link"
+                >netflix</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="cursor.js"></script>
+    <script src="random-image-picker.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
